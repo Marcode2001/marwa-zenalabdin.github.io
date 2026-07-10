@@ -8,9 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ====== HEADER - الشريط العلوي ====== */
+
 header {
-    background-color: rgba(255, 231, 240, 0.95);
+    background-color: rgba(109, 40, 40, 0.274);
     width: 100%;
     position: fixed;
     top: 0;
@@ -19,57 +19,43 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 15px rgba(74, 14, 27, 0.06);
 }
 
 .logo {
     text-decoration: none;
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-weight: 700;
     font-size: 1.4em;
     text-transform: uppercase;
     padding: 10px 20px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: rgb(204, 91, 110);
-    font-weight: 600;
-    font-size: 1.1em;
+    color: #4a0e1b;
+    font-weight: 500;
+    font-size: 1.0em;
     padding: 0.625em 1.25em;
     transition: 0.3s ease;
     border-radius: 8px;
 }
 
 .navigation a:hover {
-    color: rgb(204, 48, 74);
-    background-color: rgba(204, 91, 110, 0.1);
+    color: #6b1a2a;
+    background-color: rgba(107, 26, 42, 0.08);
 }
 
-/* ====== MAIN SECTION - الصفحة الرئيسية ====== */
 .main {
     padding: 100px 100px 60px;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    background-color: #f0ebe3;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-}
-
-/* دوائر زخرفية في الخلفية */
-.main::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: rgba(204, 91, 110, 0.05);
-    pointer-events: none;
 }
 
 .main::after {
@@ -80,7 +66,7 @@ header {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: rgba(204, 91, 110, 0.397);
+    background: rgba(74, 14, 27, 0.03);
     pointer-events: none;
 }
 
@@ -92,7 +78,6 @@ header {
     width: 100%;
 }
 
-/* ====== HERO SECTION - قسم الترحيب ====== */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -117,15 +102,15 @@ header {
 }
 
 .name {
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-size: 2.8em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 8px;
     letter-spacing: 2px;
 }
 
 .hero-text .subtitle {
-    color: rgb(204, 91, 110);
+    color: #6b1a2a;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -141,7 +126,6 @@ header {
     max-width: 700px;
 }
 
-/* ====== HERO INFO - المعلومات الشخصية ====== */
 .hero-left {
     width: 100%;
     display: flex;
@@ -163,34 +147,40 @@ header {
 .hero-info-item {
     display: flex;
     align-items: center;
-    background-color: #fce4ec;
-    gap: 5px;
-    padding: 8px 16px;
+    background-color: #e8e0d5;
+    gap: 8px;
+    padding: 8px 18px;
     border-radius: 30px;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(204, 91, 110, 0.288);
+    border: 1px solid rgba(74, 14, 27, 0.06);
     transition: 0.3s ease;
     flex: 0 1 auto;
     white-space: nowrap;
 }
 
+.hero-info-item:hover {
+    background-color: rgba(74, 14, 27, 0.06);
+    border-color: #6b1a2a;
+    transform: translateY(-2px);
+}
+
 .hero-info-item i {
-    color: rgb(204, 91, 110);
+    color: #6b1a2a;
     font-size: 0.9em;
     width: 18px;
     text-align: center;
 }
 
 .hero-info-item span {
-    color: #444;
+    color: #4a0e1b;
     font-size: 0.8em;
     font-weight: 500;
 }
 
-/* ====== MAIN BUTTON - الزر الرئيسي ====== */
+
 .main-btn {
-    color: white;
-    background-color: rgb(204, 91, 110);
+    color: #ffffff;
+    background-color: #6b1a2a;
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 600;
@@ -200,7 +190,7 @@ header {
     padding: 14px 35px;
     border-radius: 50px;
     transition: 0.4s ease;
-    box-shadow: 0 4px 20px rgba(204, 91, 110, 0.3);
+    box-shadow: 0 4px 20px rgba(107, 26, 42, 0.15);
     margin-top: 10px;
 }
 
@@ -209,23 +199,22 @@ header {
 }
 
 .main-btn:hover {
-    background-color: rgb(204, 48, 74);
+    background-color: #4a0e1b;
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(204, 91, 110, 0.4);
+    box-shadow: 0 8px 30px rgba(74, 14, 27, 0.25);
 }
 
 .main-btn:hover i {
     transform: translateX(5px);
 }
 
-/* ====== HOME ABOUT - قسم الشهادات ====== */
 .home-about {
-    background: rgba(255, 255, 255, 0.219);
+    background: #e8e0d5;
     backdrop-filter: blur(15px);
     border-radius: 24px;
     padding: 45px 50px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(74, 14, 27, 0.04);
 }
 
 .about-grid {
@@ -238,7 +227,7 @@ header {
 }
 
 .certificates h3 {
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-size: 1.1em;
     margin-bottom: 14px;
 }
@@ -251,54 +240,43 @@ header {
 .certificates li {
     padding: 10px 16px;
     margin-bottom: 8px;
-    background: rgba(204, 91, 110, 0.06);
+    background: #f0ebe3;
     border-radius: 10px;
     font-size: 0.9em;
     transition: 0.3s ease;
-    color: #444;
-    border-left: 3px solid rgb(204, 91, 110);
+    color: #4a0e1b;
+    border-left: 3px solid #6b1a2a;
     display: flex;
     align-items: center;
     gap: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
 }
 
 .certificates li i {
-    color: rgb(204, 91, 110);
+    color: #6b1a2a;
     font-size: 0.8em;
 }
 
 .certificates li:hover {
-    background: rgba(204, 91, 110, 0.12);
     transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(74, 14, 27, 0.06);
 }
 
 /* ====== SERVICES SECTION - قسم المهارات ====== */
 .services {
-    background-color: rgb(250, 250, 233);
+    background-color: #f0ebe3;
     padding: 100px 150px;
 }
 
 .title {
     text-align: center;
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-size: 2.8em;
     font-weight: 800;
     margin-bottom: 40px;
     position: relative;
 }
 
-/* خط تحت العنوان */
-.title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 4px;
-    background: rgb(204, 91, 110);
-    border-radius: 2px;
-}
 
 .content {
     display: flex;
@@ -307,30 +285,32 @@ header {
     gap: 25px;
 }
 
-/* ====== CARDS - بطاقات المهارات ====== */
+
 .card {
-    background-color: white;
+    background-color: #e8e0d5;
     width: 300px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
     padding: 30px 25px;
     transition: 0.4s ease;
     text-align: center;
+    border: 1px solid rgba(74, 14, 27, 0.04);
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 35px rgba(204, 91, 110, 0.15);
+    box-shadow: 0 8px 35px rgba(107, 26, 42, 0.08);
+    border-color: #6b1a2a;
 }
 
 .icon {
-    color: rgb(204, 48, 74);
+    color: #6b1a2a;
     font-size: 2.8em;
     margin-bottom: 15px;
 }
 
 .info h3 {
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-size: 1.4em;
     font-weight: 700;
     margin-bottom: 15px;
@@ -342,22 +322,23 @@ header {
     line-height: 1.6;
 }
 
-/* ====== WHAT I CAN DO - تحت الكروت ====== */
+
 .what-i-can-do {
     margin-top: 60px;
     padding: 40px 50px;
-    background: rgba(255, 255, 255, 0.8);
+    background: #e8e0d5;
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(204, 91, 110, 0.15);
+    border: 1px solid rgba(74, 14, 27, 0.04);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.02);
 }
 
 .section-subtitle {
     text-align: center;
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 25px;
@@ -376,37 +357,37 @@ header {
     align-items: center;
     gap: 10px;
     padding: 10px 20px;
-    background: white;
+    background: #f0ebe3;
     border-radius: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
     transition: 0.3s ease;
-    border: 1px solid rgba(204, 91, 110, 0.1);
+    border: 1px solid rgba(74, 14, 27, 0.04);
     flex: 0 1 auto;
 }
 
 .skill-tag:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(204, 91, 110, 0.15);
-    border-color: rgb(204, 91, 110);
-    background: rgba(204, 91, 110, 0.05);
+    box-shadow: 0 6px 25px rgba(107, 26, 42, 0.08);
+    border-color: #6b1a2a;
+    background: rgba(107, 26, 42, 0.04);
 }
 
 .skill-tag i {
-    color: rgb(204, 91, 110);
+    color: #6b1a2a;
     font-size: 1.1em;
     width: 22px;
     text-align: center;
 }
 
 .skill-tag span {
-    color: #444;
+    color: #4a0e1b;
     font-size: 0.9em;
     font-weight: 500;
 }
 
-/* ====== PROJECT SECTION - قسم المشاريع ====== */
+
 .project {
-    background-color: rgb(211, 189, 200);
+    background-color: #f0ebe3;
     padding: 100px 150px;
 }
 
@@ -416,22 +397,24 @@ header {
 }
 
 .project-card {
-    background-color: white;
+    background-color: #e8e0d5;
     border-radius: 16px;
     padding: 30px;
     margin: 20px 0;
     transition: 0.4s ease;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04);
     width: 100%;
+    border: 1px solid rgba(74, 14, 27, 0.04);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 35px rgba(107, 26, 42, 0.06);
+    border-color: #6b1a2a;
 }
 
 .project-title {
-    color: rgb(204, 91, 110);
+    color: #4a0e1b;
     text-align: center;
     font-size: 1.4em;
     margin-bottom: 15px;
@@ -443,21 +426,19 @@ header {
     line-height: 1.8;
 }
 
-/* ====== PROJECTS MEDIA - صور المشاريع ====== */
+
 .project-media {
     margin-bottom: 20px;
     border-radius: 12px;
     overflow: hidden;
 }
 
-/* شبكة الصور - 3 أعمدة */
 .project-image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-/* تنسيق الصور - متل ما كانت */
 .project-image-grid img {
     width: 100%;
     height: auto;
@@ -465,19 +446,19 @@ header {
     object-fit: contain;
     border-radius: 10px;
     transition: 0.3s ease;
-    border: 2px solid rgb(204, 91, 110);
+    border: 2px solid rgba(74, 14, 27, 0.06);
     cursor: pointer;
-    background: #fce4ec;
+    background: #f0ebe3;
     padding: 8px;
 }
 
 .project-image-grid img:hover {
     transform: scale(1.03);
-    border-color: rgb(204, 91, 110);
-    box-shadow: 0 4px 20px rgba(204, 91, 110, 0.2);
+    border-color: #6b1a2a;
+    box-shadow: 0 4px 20px rgba(107, 26, 42, 0.1);
 }
 
-/* ====== LIGHTBOX - تكبير الصور ====== */
+/* ====== LIGHTBOX ====== */
 .lightbox {
     display: none;
     position: fixed;
@@ -485,7 +466,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(74, 14, 27, 0.95);
     z-index: 9999;
     justify-content: center;
     align-items: center;
@@ -500,13 +481,14 @@ header {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+    border: 3px solid #e8e0d5;
 }
 
 .lightbox-close {
     position: absolute;
     top: 20px;
     right: 30px;
-    color: white;
+    color: #ffffff;
     font-size: 2.5em;
     cursor: pointer;
     transition: 0.3s ease;
@@ -514,13 +496,32 @@ header {
 
 .lightbox-close:hover {
     transform: rotate(90deg);
-    color: rgb(204, 91, 110);
+    color: #e8e0d5;
 }
 
 /* ====== CONTACT SECTION - قسم التواصل ====== */
 .contact {
-    background-color: rgb(250, 241, 231);
+    background-color: #f0ebe3;
     padding: 100px 150px;
+}
+
+.contact .title {
+    color: #4a0e1b;
+}
+
+.contact .title::after {
+    background: #6b1a2a;
+}
+
+.contact .card {
+    background: #e8e0d5;
+    border: 1px solid rgba(74, 14, 27, 0.04);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.02);
+}
+
+.contact .card:hover {
+    border-color: #6b1a2a;
+    box-shadow: 0 8px 30px rgba(107, 26, 42, 0.06);
 }
 
 .contact .card {
@@ -528,44 +529,46 @@ header {
 }
 
 .contact .icon {
+    color: #6b1a2a;
     font-size: 3.5em;
     margin-bottom: 10px;
 }
 
 .contact .info h3 {
+    color: #4a0e1b;
     font-size: 1.2em;
     margin-bottom: 8px;
 }
 
 .contact .info p {
-    color: #666;
+    color: #555;
     font-size: 0.95em;
 }
 
 /* ====== FOOTER - التذييل ====== */
 .footer {
-    background-color: rgb(196, 174, 185);
-    color: white;
-    padding: 20px 50px;
+    background-color: #4a0e1b;
+    color: #d4c5b8;
+    padding: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(232, 224, 213, 0.1);
 }
 
 .footer-title {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
 }
 
 .footer-title span {
-    color: rgb(204, 48, 74);
+    color: #e8e0d5;
 }
 
 /* ============================================================
-   ====== RESPONSIVE DESIGN - التجاوب مع الشاشات ======
+   ====== RESPONSIVE DESIGN ======
    ============================================================ */
 
-/* ====== شاشات متوسطة (تابلت) ====== */
 @media (max-width: 1024px) {
     .main {
         padding: 100px 50px 40px;
@@ -580,7 +583,6 @@ header {
     }
 }
 
-/* ====== شاشات صغيرة (جوال) ====== */
 @media (max-width: 768px) {
     .main {
         padding: 80px 20px 30px;
@@ -662,7 +664,6 @@ header {
         font-size: 0.8em;
     }
     
-    /* صور المشاريع */
     .project-image-grid {
         gap: 8px;
     }
@@ -704,7 +705,6 @@ header {
     }
 }
 
-/* ====== شاشات صغيرة جداً (جوال صغير) ====== */
 @media (max-width: 480px) {
     .name {
         font-size: 1.6em;
@@ -760,7 +760,6 @@ header {
         justify-content: center;
     }
     
-    /* صور المشاريع - عمودين بدل 3 */
     .project-image-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 6px;
@@ -777,43 +776,5 @@ header {
     .certificates li {
         font-size: 0.8em;
         padding: 8px 12px;
-    }
-}
-
-/* ====== VIDEO STYLES ====== */
-
-/* فيديو المشروع */
-.project-video {
-    width: 100%;
-    max-height: 450px;
-    border-radius: 12px;
-    background: #000;
-    display: block;
-    margin-bottom: 20px;
-}
-
-/* تنسيق عناصر التحكم في الفيديو */
-.project-video::-webkit-media-controls {
-    background-color: rgba(204, 91, 110, 0.1);
-}
-
-.project-video::-webkit-media-controls-play-button {
-    background-color: rgb(204, 91, 110);
-    border-radius: 50%;
-    padding: 5px;
-}
-
-/* ====== RESPONSIVE للفيديو ====== */
-@media (max-width: 768px) {
-    .project-video {
-        max-height: 300px;
-        border-radius: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .project-video {
-        max-height: 200px;
-        border-radius: 6px;
     }
 }
